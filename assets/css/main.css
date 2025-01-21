@@ -1874,7 +1874,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.image:before {
+		/*.image:before {
 			background: url("images/overlay.png");
 			content: '';
 			height: 100%;
@@ -1882,7 +1882,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
+		}*/
 
 		.image.fit {
 			display: block;
@@ -1894,12 +1894,12 @@ input, select, textarea {
 			}
 
 		.image.featured {
-			/*display: block;*/
+			display: block;
 			margin: 0 0 2em 0;
 		}
 
 			.image.featured img {
-				/*display: block;*/
+				display: block;
 				width: 100%;
 			}
 
