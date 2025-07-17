@@ -80,7 +80,7 @@
                 </p>
               </section>
               <hr />
-              <!-- Blog Post 1 -->
+              <!-- Blog Post 2 -->
               <section class="content">
                 <header>
                   <h3>Growth and Learning</h3>
@@ -112,6 +112,45 @@
                   and build real confidence in my knowledge. Each small step forward became an 
                   opportunity to learn, rather than a test of whether I already knew enough.
                 </p>
+              </section>
+              <hr />
+              <!-- Blog Post 3 -->
+              <section class="content">
+                <header>
+                  <h3>Fixing a Video Stream Bug in My Robot App</h3>
+                  <p><small>July 14, 2025</small></p>
+                </header>
+                <p>
+                  While working on the robot control app this last week 
+                  I had to learn how to stream video  from a media 
+                  server to the app. The robot uses a mediaMTX server 
+                  to send a video stream, and fortunately, setting up 
+                  the video player in Flutter is actually pretty easy. 
+                  You only need to declare a few variables and a 
+                  controller to get started.
+
+                </p>
+                <p>
+                 One of the issues I ran into when testing the player 
+                 was related to the IP address I was using. I used the 
+                 command ipconfig in the terminal to see a list of IP 
+                 addresses, but not reading the whole thing just grabbed 
+                 the first one. I had accidentally set up the stream 
+                 with a local IP address that was connected to Docker. 
+                 This worked fine when I had originally tested locally 
+                 on my machine but when testing the app on my phone it 
+                 wasn’t able to reach the stream. It took me a while to 
+                 realize that the problem was simply the wrong IP address; 
+                 the local one wasn’t accessible from my phone, but that 
+                 wasn’t obvious at first. After seeing an error say the IP 
+                 address wasn’t reachable, I fixed the issue by looking 
+                 back through the terminal command and found the correct 
+                 address and updated the app to connect to the robot’s IP 
+                 address on the same network as my phone. I also verified 
+                 the stream using the vlc media player app on my phone to confirm 
+                 it was accessible outside Docker.
+                </p>
+                
               </section>
               <hr />
           </div>
